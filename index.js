@@ -51,7 +51,7 @@ app.get('/api/shorturl/:id', (req, res) => {
   if (originalUrl) {
     res.redirect(originalUrl);
   } else {
-    res.json({ error: 'No short URL found' });
+    res.json({ error: 'invalid url' });
   }
 });
 
